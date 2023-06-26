@@ -1,0 +1,36 @@
+.table-container {
+background-color: #fff;
+margin: 0 auto;
+max-width: 800px;
+padding: 20px;
+}
+
+.div-container {
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.left-container {
+  width: 80%;
+  margin-right: 20px;
+  border-right: 1px solid black;
+}
+
+.right-container {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.left-container h1{
+  text-align: center;
+}

@@ -1,0 +1,39 @@
+<div class="card add-transferencia">
+  <h5 class="card-header"></h5>
+  <div class="card-body">
+    <form [formGroup]="formulario" (ngSubmit)="enviarAgendamento()">
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Conta de origem</mat-label>
+          <input matInput formControlName="contaOrigem" placeholder="Digite a conta de origem">
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Conta de destino</mat-label>
+          <input matInput formControlName="contaDestino" placeholder="Digite a conta de destino">
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Data de transferência</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="dataTransferencia" placeholder="Selecione a data">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Valor</mat-label>
+          <input matInput formControlName="valor" placeholder="Digite o valor">
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="primary" type="submit">Salvar</button>
+      <button mat-raised-button color="warn" type="reset">Cancelar</button>
+    </form>
+  </div>
+</div>
