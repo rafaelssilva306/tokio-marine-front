@@ -1,4 +1,4 @@
-# Projeto front-end teste para a Tokio Marine
+# Projeto teste Tokio Marine front-end
 
 Projeto feito em Angular 16.1.1, divido em componentes sendo eles: 
 1. Agendar Transferencia
